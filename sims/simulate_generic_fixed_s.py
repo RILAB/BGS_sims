@@ -49,7 +49,7 @@ rates = [mu_n, mu_s, rec]
 
 
 # constant size for 10 N generations
-#burnin=np.array([Nstart]*int(10*Nstart),dtype=np.uint32)
+burnin=np.array([Nstart]*int(10*Nstart),dtype=np.uint32)
 
 mypop =  fp11.SlocusPop(Nstart)
 
