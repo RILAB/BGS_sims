@@ -24,8 +24,8 @@ echo replicate $SLURM_ARRAY_TASK_ID
 #mkdir -p results/fixed_n2/
 #srun python sims/fixed_n_sim.py results/fixed_n2/ $SLURM_ARRAY_TASK_ID
 
-mkdir -p results/model13_long/
-srun python sims/simulate_model13_to_equilibrium.py demographies/model13_for_long_sim.csv results/model13_long/ $SLURM_ARRAY_TASK_ID
+#mkdir -p results/model13_long/
+#srun python sims/simulate_model13_to_equilibrium.py demographies/model13_for_long_sim.csv results/model13_long/ $SLURM_ARRAY_TASK_ID
 
-
-
+mkdir -p results/constantS/gamma2/burnins
+srun python sims/simulate_generic_fixed_s.py demographies/generic_models.csv results/constantS/gamma2/ $SLURM_ARRAY_TASK_ID 2
