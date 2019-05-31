@@ -21,12 +21,14 @@ models = np.array(demographies.columns[-3:-1])
 
 print(models)
 
-exit()
+
 
 Nstart = 20000#int(demog.item(0))
 mu = 1.66e-8
 
-s_value= float(gamma_value)/(2*Nstart)
+s_value= float(float(gamma_value)/(2*float(Nstart)))
+
+print(s_value)
 
 ################## simulate BGS ############################
 
